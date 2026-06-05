@@ -1,11 +1,21 @@
 cd ~/Documents/repos
 alias main-checkout="gco main && g pull"
+alias o=opencode
+alias start="workbench/bin/start"
+alias stop="workbench/bin/stop"
+alias shell="workbench/bin/shell"
+alias nuke="workbench/bin/nuke"
 alias gpoh="git push origin HEAD"
 alias gs="git status"
 alias be="bundle exec"
 alias ber="be rspec"
+alias killvite="kill -9 $(lsof -n -i:3030 | grep LISTEN)"
 alias gsp='g stash pop'
 alias gfom='git fetch origin main:main'
+alias speedtest='python ~/scripts/speedtest.py'
+alias kill1pass='sudo pkill -9 com.jamf.protect.security-extension'
+alias mm='gco main && g pull && gco - && g merge main && gs'
+alias gmc='g merge --continue'
 
 
 export PATH=$PATH:/nix/var/nix/profiles/default/bin/nix
